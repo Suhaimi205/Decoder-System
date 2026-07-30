@@ -1,0 +1,4 @@
+# Data processing core
+pandas>=1.5.0
+
+pip install -r requirements.txt
