@@ -6,7 +6,7 @@ A lightweight Python tool designed to read, sanitize, and convert telemetry stat
 
 ## 🛠️ Problem & Background
 
-When exporting station metadata or telemetry readings directly from database dumps or legacy FTP/SCADA servers, string data like thresholds (`alert_threshold`, `danger_threshold`) or GPS coordinates (`latitude`, `longitude`) are often represented as raw hex strings or truncated fields.
+When exporting station metadata or telemetry readings directly from database dumps, string data like thresholds (`alert_threshold`, `danger_threshold`) or GPS coordinates (`latitude`, `longitude`) are often represented as raw hex strings or truncated fields.
 
 Common issues during manual processing include:
 * **Excel Scientific Notation Corruption:** Hex strings containing letters like `e` (e.g., `312e3930`) are misidentified by spreadsheet editors as scientific notation, causing values to overflow into `inf` or become corrupted.
